@@ -13,7 +13,19 @@ conda activate COFT
 pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 torchaudio==2.1.2+cu118
 ```
 
-## Train and Reproduction
+## File Tree
+- recaller.py  `The recaller part of COFT`
+- scorer.py `The scorer part of COFT`
+- threshold.py `To calculate the dynamic threshold of highlightings`
+- evaluation.py `To evaluate the performance of COFT`
+
+- README.md
+- requirements.txt
+- run.sh   `To run COFT`
+- all.jsonl `The FELM dataset`
+
+
+## Reproduction
 
 To run COFT,we take the Sci/Tech domain as an example, you can use the following command. For other domains, you can simply modify the file path to obtain the results.
 ```shell
