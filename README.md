@@ -1,8 +1,35 @@
 # Coarse-to-Fine Highlighting: Reducing Knowledge Hallucination in Large Language Models
 
-This repository provides datasets, and code for the following paper:
+This is the official codebase of the paper Coarse-to-Fine Highlighting: Reducing Knowledge Hallucination in Large Language Models in ICML2024.
 
-> [Coarse-to-Fine Highlighting: Reducing Knowledge Hallucination in Large Language Models](https://icml.cc/virtual/2024/poster/34392)
- <br>Qitan Lv, Jie Wang, Hanzhu Chen, Bin Li, Yongdong Zhang, Feng Wu <br>
+## Setup
 
-The codes will be open very soon.
+You can find the dependencies in `requirements.txt`. A script for installation is shown as follows:
+
+```shell
+conda create -n COFT python=3.10.13
+conda activate COFT
+
+pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 torchaudio==2.1.2+cu118
+```
+
+## Train and Reproduction
+
+To run COFT,we take the Sci/Tech domain as an example, you can use the following command. For other domains, you can simply modify the file path to obtain the results.
+```shell
+bash run.sh
+```
+
+To reproduce the results reported in the paper, just adjust the hyperparameters to the corresponding hyperparameters. You can feel free to test other set of hyperparameters.
+
+## Citation
+
+If you find our work useful your research, please cite our paper:
+
+```
+@inproceedings{lvcoarse,
+  title={Coarse-to-Fine Highlighting: Reducing Knowledge Hallucination in Large Language Models},
+  author={Lv, Qitan and Wang, Jie and Chen, Hanzhu and Li, Bin and Zhang, Yongdong and Wu, Feng},
+  booktitle={Forty-first International Conference on Machine Learning}
+}
+```
