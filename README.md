@@ -10,7 +10,7 @@ You can find the dependencies in `requirements.txt`. A script for installation i
 conda create -n COFT python=3.10.13
 conda activate COFT
 
-pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 torchaudio==2.1.2+cu118
+pip install -r requirements.txt
 ```
 
 ## File Tree
